@@ -43,6 +43,57 @@
 </head>
 
 <body class="text-ink">
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="icon-building" viewBox="0 0 24 24">
+      <path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path>
+      <path d="M16 8h2a2 2 0 0 1 2 2v11"></path>
+      <path d="M8 7h4M8 11h4M8 15h4M3 21h18"></path>
+    </symbol>
+    <symbol id="icon-circuit" viewBox="0 0 24 24">
+      <path d="M7 7h10v10H7z"></path>
+      <path d="M4 9h3M4 15h3M17 9h3M17 15h3M9 4v3M15 4v3M9 17v3M15 17v3"></path>
+      <path d="M10 10h4v4h-4z"></path>
+    </symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24">
+      <circle cx="12" cy="8" r="5"></circle>
+      <path d="m8.5 12.5-1.5 8 5-3 5 3-1.5-8"></path>
+    </symbol>
+    <symbol id="icon-heart-pulse" viewBox="0 0 24 24">
+      <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"></path>
+      <path d="M3 13h4l2-3 3 6 2-3h7"></path>
+    </symbol>
+    <symbol id="icon-factory" viewBox="0 0 24 24">
+      <path d="M3 21V10l6 4v-4l6 4V8l6 4v9H3Z"></path>
+      <path d="M7 18h2M12 18h2M17 18h2"></path>
+    </symbol>
+    <symbol id="icon-network" viewBox="0 0 24 24">
+      <circle cx="6" cy="6" r="3"></circle>
+      <circle cx="18" cy="6" r="3"></circle>
+      <circle cx="12" cy="18" r="3"></circle>
+      <path d="m8.5 8 2.5 7M15.5 8 13 15M9 6h6"></path>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <path d="M4 6h16v12H4z"></path>
+      <path d="m4 7 8 6 8-6"></path>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6.4 6.4l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6A2 2 0 0 1 22 16.9Z"></path>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V9h4v2"></path>
+      <path d="M2 9h4v12H2z"></path>
+      <circle cx="4" cy="4" r="2"></circle>
+    </symbol>
+    <symbol id="icon-file" viewBox="0 0 24 24">
+      <path d="M6 2h8l4 4v16H6z"></path>
+      <path d="M14 2v5h5M9 13h6M9 17h6"></path>
+    </symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24">
+      <path d="M14 3h7v7"></path>
+      <path d="M10 14 21 3"></path>
+      <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"></path>
+    </symbol>
+  </svg>
   <header class="sticky top-0 z-50 border-b border-stone/10 bg-paper/90 backdrop-blur-xl">
     <nav class="shell mx-auto flex items-center justify-between px-6 py-4 lg:px-8">
       <a href="#hero" class="text-base font-extrabold uppercase tracking-wide text-brand">Dr. Cherise Dunn</a>
@@ -92,17 +143,26 @@
             <a href="#impact" class="rounded-full border border-stone/20 bg-white/70 px-7 py-3.5 text-sm font-semibold text-ink hover:-translate-y-0.5 hover:border-brand hover:text-brand">View Impact</a>
           </div>
 
-          <div class="grid gap-4 sm:grid-cols-3">
-            <div class="glass-panel rounded-3xl p-5">
-              <p class="stat-kicker">Advises</p>
+          <div class="hero-stats grid gap-4 sm:grid-cols-3">
+            <div class="hero-stat-card glass-panel rounded-3xl p-5">
+              <div class="stat-header">
+                <svg class="ui-icon" aria-hidden="true"><use href="#icon-building"></use></svg>
+                <p class="stat-kicker">Advises</p>
+              </div>
               <p class="mt-2 text-base font-semibold text-ink">Health systems, public institutions, universities, and innovation partners.</p>
             </div>
-            <div class="glass-panel rounded-3xl p-5">
-              <p class="stat-kicker">Builds</p>
+            <div class="hero-stat-card glass-panel rounded-3xl p-5">
+              <div class="stat-header">
+                <svg class="ui-icon" aria-hidden="true"><use href="#icon-circuit"></use></svg>
+                <p class="stat-kicker">Builds</p>
+              </div>
               <p class="mt-2 text-base font-semibold text-ink">AI-enabled strategy, digital manufacturing, health equity programs, and cross-sector partnerships.</p>
             </div>
-            <div class="glass-panel rounded-3xl p-5">
-              <p class="stat-kicker">Proof</p>
+            <div class="hero-stat-card glass-panel rounded-3xl p-5">
+              <div class="stat-header">
+                <svg class="ui-icon" aria-hidden="true"><use href="#icon-award"></use></svg>
+                <p class="stat-kicker">Proof</p>
+              </div>
               <p class="mt-2 text-base font-semibold text-ink">Harvard, UCT, G20 Startup20, BRICS, IVLP, TEDx, and MIT AI Ventures.</p>
             </div>
           </div>
@@ -110,19 +170,19 @@
 
         <aside class="glass-panel rounded-[2rem] p-5 md:p-6">
           <div class="overflow-hidden rounded-[1.6rem]">
-            <img src="./Images/Dr Cherise Dunn Hero Headshot.jpeg" alt="Portrait of Dr. Cherise Dunn" class="spotlight-image w-full" />
+            <img src="./Images/Dr Cherise Dunn Hero Headshot.jpeg" alt="Portrait of Dr. Cherise Dunn" class="spotlight-image w-full" width="953" height="715" />
           </div>
           <div class="mt-6 space-y-4">
             <div class="flex items-center justify-between gap-4 border-b border-stone/10 pb-4">
               <div>
                 <p class="text-sm font-semibold uppercase tracking-[0.14em] text-brand">Current Role</p>
-                <p class="mt-1 text-base font-semibold text-ink">Founder-operator and strategic advisor in healthcare, AI, digital manufacturing, and health equity.</p>
+                <p class="mt-1 text-base font-semibold text-ink">Founder-operator and strategic advisor</p>
               </div>
             </div>
             <div class="grid gap-3 sm:grid-cols-2">
               <div class="rounded-2xl bg-white/80 p-4">
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-brand">Core Domains</p>
-                <p class="mt-2 text-sm font-medium leading-6 text-stone">Healthcare, AI, digital manufacturing, health equity, policy.</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-brand">Domains</p>
+                <p class="mt-2 text-sm font-medium leading-6 text-stone">Healthcare | AI | Digital Manufacturing | Health Equity</p>
               </div>
               <div class="rounded-2xl bg-white/80 p-4">
                 <p class="text-xs font-bold uppercase tracking-[0.16em] text-brand">Engagements</p>
@@ -147,11 +207,11 @@
         </div>
 
         <div class="proof-grid grid gap-4">
-          <div class="proof-logo"><img src="./Logos/Harvard_University_logo.svg.png" alt="Harvard University" loading="lazy" /></div>
-          <div class="proof-logo"><img src="./Logos/Harvard_Chan_SPH_logo.png" alt="Harvard T.H. Chan School of Public Health" loading="lazy" /></div>
+          <div class="proof-logo"><img src="./Logos/Harvard_University_logo.svg.png" alt="Harvard University" width="1857" height="468" loading="lazy" /></div>
+          <div class="proof-logo"><img src="./Logos/Harvard_Chan_SPH_logo.png" alt="Harvard T.H. Chan School of Public Health" width="1448" height="259" loading="lazy" /></div>
           <div class="proof-logo"><img src="./Logos/University_of_Cape_Town_logo.svg" alt="University of Cape Town" loading="lazy" /></div>
-          <div class="proof-logo"><img src="./Logos/G20_Brazil_2024.png" alt="G20 Brazil 2024" loading="lazy" /></div>
-          <div class="proof-logo"><img src="./Logos/15th_BRICS_summit_logo.png" alt="BRICS Summit" loading="lazy" /></div>
+          <div class="proof-logo"><img src="./Logos/G20_Brazil_2024.png" alt="G20 Brazil 2024" width="1280" height="913" loading="lazy" /></div>
+          <div class="proof-logo"><img src="./Logos/15th_BRICS_summit_logo.png" alt="BRICS Summit" width="1280" height="921" loading="lazy" /></div>
           <div class="proof-logo"><img src="./Logos/Seal_of_the_United_States_Department_of_State.svg" alt="U.S. Department of State" loading="lazy" /></div>
         </div>
       </div>
@@ -173,8 +233,8 @@
       <div class="shell mx-auto space-y-10">
         <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div class="max-w-3xl space-y-4">
-            <p class="section-label">Impact</p>
-            <h2 class="text-4xl text-ink md:text-5xl">Selected proof across healthcare, manufacturing, policy, and recognition</h2>
+            <p class="section-label">Selected Impact</p>
+            <h2 class="text-4xl text-ink md:text-5xl">Proof across healthcare, manufacturing, policy, and recognition</h2>
             <p class="text-lg leading-8 text-stone">
               Roles, platforms, awards, and institutional work with direct relevance to healthcare innovation.
             </p>
@@ -279,27 +339,34 @@
           </p>
         </div>
 
-        <div class="grid gap-5 lg:grid-cols-3">
-          <article class="impact-card rounded-[1.75rem] p-7">
-            <p class="section-label">AI Strategy for Health Systems</p>
-            <h3 class="mt-4 text-2xl text-ink">AI-enabled services, workflows, and partnerships</h3>
-            <p class="mt-4 text-sm leading-7 text-stone">For institutions evaluating implementation risk, governance, and practical adoption.</p>
-          </article>
-          <article class="impact-card rounded-[1.75rem] p-7">
-            <p class="section-label">Distributed Manufacturing for Healthcare</p>
-            <h3 class="mt-4 text-2xl text-ink">Point-of-care production and resilient supply</h3>
-            <p class="mt-4 text-sm leading-7 text-stone">For medical-device pathways, local capability building, and delivery resilience.</p>
-          </article>
-          <article class="impact-card rounded-[1.75rem] p-7">
-            <p class="section-label">Health Equity Implementation</p>
-            <h3 class="mt-4 text-2xl text-ink">Access models built for delivery</h3>
-            <p class="mt-4 text-sm leading-7 text-stone">For strategies that must translate policy intent into operational practice.</p>
-          </article>
-          <article class="impact-card rounded-[1.75rem] p-7">
-            <p class="section-label">Cross-Sector Partnership Design</p>
-            <h3 class="mt-4 text-2xl text-ink">Aligned roles and execution discipline</h3>
-            <p class="mt-4 text-sm leading-7 text-stone">For public, private, university, and funder partnerships with shared delivery goals.</p>
-          </article>
+        <div class="capabilities-panel">
+          <div class="capabilities-index">
+            <p class="section-label">Use Cases</p>
+            <ul>
+              <li><svg class="ui-icon" aria-hidden="true"><use href="#icon-circuit"></use></svg><span>AI Strategy for Health Systems</span></li>
+              <li><svg class="ui-icon" aria-hidden="true"><use href="#icon-factory"></use></svg><span>Distributed Manufacturing for Healthcare</span></li>
+              <li><svg class="ui-icon" aria-hidden="true"><use href="#icon-heart-pulse"></use></svg><span>Health Equity Implementation</span></li>
+              <li><svg class="ui-icon" aria-hidden="true"><use href="#icon-network"></use></svg><span>Cross-Sector Partnership Design</span></li>
+            </ul>
+          </div>
+          <div class="capabilities-detail">
+            <article>
+              <h3>AI-enabled services, workflows, and partnerships</h3>
+              <p>For institutions evaluating implementation risk, governance, and practical adoption.</p>
+            </article>
+            <article>
+              <h3>Point-of-care production and resilient supply</h3>
+              <p>For medical-device pathways, local capability building, and delivery resilience.</p>
+            </article>
+            <article>
+              <h3>Access models built for delivery</h3>
+              <p>For strategies that must translate policy intent into operational practice.</p>
+            </article>
+            <article>
+              <h3>Aligned roles and execution discipline</h3>
+              <p>For public, private, university, and funder partnerships with shared delivery goals.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -364,15 +431,15 @@
 
         <div class="photo-grid">
           <figure class="photo-card photo-card-large">
-            <img src="./Images/Dr-Cherise-Dunn-6.jpg" alt="Dr. Cherise Dunn speaking at a public event" class="photo-image" loading="eager" />
+            <img src="./Images/Dr-Cherise-Dunn-6.jpg" alt="Dr. Cherise Dunn speaking at a public event" class="photo-image" width="1600" height="1066" loading="eager" />
             <figcaption class="photo-caption">Founder/operator portrait in innovation setting</figcaption>
           </figure>
           <figure class="photo-card">
-            <img src="./Images/Dr-Cherise-Dunn-1.jpg" alt="Portrait of Dr. Cherise Dunn at an event" class="photo-image" loading="eager" />
+            <img src="./Images/Dr-Cherise-Dunn-1.jpg" alt="Portrait of Dr. Cherise Dunn at an event" class="photo-image" width="1366" height="1366" loading="eager" />
             <figcaption class="photo-caption">YouthX speaking appearance</figcaption>
           </figure>
           <figure class="photo-card">
-            <img src="./Images/Dr-Cherise-Dunn-8.jpg" alt="Dr. Cherise Dunn in a professional healthcare innovation setting" class="photo-image" loading="eager" />
+            <img src="./Images/Dr-Cherise-Dunn-8.jpg" alt="Dr. Cherise Dunn in a professional healthcare innovation setting" class="photo-image" width="3024" height="4032" loading="eager" />
             <figcaption class="photo-caption">Public leadership and healthcare innovation audience</figcaption>
           </figure>
         </div>
@@ -390,7 +457,7 @@
         </div>
 
         <div class="recognition-grid">
-          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open Harvard source for Fast Company South Africa recognition">
+          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for Fast Company South Africa recognition">
             <div class="recognition-logo">
               <img src="./Logos/Fast_Company_logo.svg" alt="Fast Company" loading="lazy" />
             </div>
@@ -398,76 +465,83 @@
               <p class="section-label">Press</p>
               <h3 class="text-2xl text-ink">Fast Company South Africa</h3>
               <p class="text-sm leading-7 text-stone">Most Innovative Company recognition in South Africa.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
 
-          <a href="https://formlabs.com/ambassadors/?page=5" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open Formlabs source for Inspiring Fifty Africa recognition">
+          <a href="https://formlabs.com/ambassadors/?page=5" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for Inspiring Fifty Africa recognition">
             <div class="recognition-logo">
-              <img src="./Logos/Inspiring_Fifty_Africa.png" alt="Inspiring Fifty Africa" loading="lazy" />
+              <img src="./Logos/Inspiring_Fifty_Africa.png" alt="Inspiring Fifty Africa" width="3151" height="779" loading="lazy" />
             </div>
             <div class="space-y-3">
               <p class="section-label">Award</p>
               <h3 class="text-2xl text-ink">Inspiring Fifty Africa</h3>
               <p class="text-sm leading-7 text-stone">Awarded for leadership in technology and innovation across Africa.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
 
-          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open Harvard source for U.S. State Department IVLP">
+          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for U.S. State Department IVLP">
             <div class="recognition-logo">
-              <img src="./Logos/IVLP_Logo.png" alt="International Visitor Leadership Program" loading="lazy" />
+              <img src="./Logos/IVLP_Logo.png" alt="International Visitor Leadership Program" width="4752" height="1432" loading="lazy" />
             </div>
             <div class="space-y-3">
               <p class="section-label">Leadership Program</p>
               <h3 class="text-2xl text-ink">U.S. State Department IVLP</h3>
               <p class="text-sm leading-7 text-stone">International Visitor Leadership Program for Women in Business.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
 
-          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open Harvard source for G20 Startup20 participation">
+          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for G20 Startup20 participation">
             <div class="recognition-logo">
-              <img src="./Logos/G20_Brazil_2024.png" alt="G20 Brazil 2024" loading="lazy" />
+              <img src="./Logos/G20_Brazil_2024.png" alt="G20 Brazil 2024" width="1280" height="913" loading="lazy" />
             </div>
             <div class="space-y-3">
               <p class="section-label">Global Forum</p>
               <h3 class="text-2xl text-ink">G20 Startup20</h3>
               <p class="text-sm leading-7 text-stone">Delegate selection for the G20 Startup20 platform.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
 
-          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open Harvard source for BRICS Young Innovator participation">
+          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for BRICS Young Innovator participation">
             <div class="recognition-logo">
-              <img src="./Logos/15th_BRICS_summit_logo.png" alt="BRICS Summit" loading="lazy" />
+              <img src="./Logos/15th_BRICS_summit_logo.png" alt="BRICS Summit" width="1280" height="921" loading="lazy" />
             </div>
             <div class="space-y-3">
               <p class="section-label">Global Forum</p>
               <h3 class="text-2xl text-ink">BRICS Young Innovator</h3>
               <p class="text-sm leading-7 text-stone">Finalist distinction for emerging-markets innovation leadership.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
 
-          <a href="https://www.youtube.com/watch?v=ePO3FomVpwo" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open TEDx Cape Town talk">
+          <a href="https://www.youtube.com/watch?v=ePO3FomVpwo" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for TEDx Cape Town talk">
             <div class="recognition-logo">
-              <img src="./Logos/TEDx_Logo.png" alt="TEDx" loading="lazy" />
+              <img src="./Logos/TEDx_Logo.png" alt="TEDx" width="697" height="204" loading="lazy" />
             </div>
             <div class="space-y-3">
               <p class="section-label">Talk Platform</p>
               <h3 class="text-2xl text-ink">TEDx Cape Town</h3>
               <p class="text-sm leading-7 text-stone">TEDx Cape Town talk on healthcare innovation and regional capability.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
 
-          <a href="https://events.stanford.edu/event/innovating-for-impact-using-entrepreneurial-strategies-to-address-urgent-healthcare-challenges-in-africa" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open Stanford source for MIT AI Ventures">
+          <a href="https://events.stanford.edu/event/innovating-for-impact-using-entrepreneurial-strategies-to-address-urgent-healthcare-challenges-in-africa" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for MIT AI Ventures">
             <div class="recognition-logo">
-              <img src="./Logos/MIT_Logo_and_Wordmark.svg.png" alt="MIT" loading="lazy" />
+              <img src="./Logos/MIT_Logo_and_Wordmark.svg.png" alt="MIT" width="1751" height="405" loading="lazy" />
             </div>
             <div class="space-y-3">
               <p class="section-label">Program</p>
               <h3 class="text-2xl text-ink">MIT AI Ventures</h3>
               <p class="text-sm leading-7 text-stone">AI, entrepreneurship, and venture-building program.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
 
-          <a href="https://formlabs.com/ambassadors/?page=5" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open Formlabs source for Mail and Guardian recognition">
+          <a href="https://formlabs.com/ambassadors/?page=5" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for Mail and Guardian recognition">
             <div class="recognition-logo">
               <img src="./Logos/Mail_and_Guardian_logo.svg" alt="Mail and Guardian" loading="lazy" />
             </div>
@@ -475,12 +549,13 @@
               <p class="section-label">Press</p>
               <h3 class="text-2xl text-ink">Mail &amp; Guardian</h3>
               <p class="text-sm leading-7 text-stone">Public-interest press coverage.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
 
           <article class="recognition-card">
             <div class="recognition-logo">
-              <img src="./Logos/Standard_Bank_Top_Women_logo.png" alt="Standard Bank Top Women" loading="lazy" />
+              <img src="./Logos/Standard_Bank_Top_Women_logo.png" alt="Standard Bank Top Women" width="932" height="188" loading="lazy" />
             </div>
             <div class="space-y-3">
               <p class="section-label">Recognition</p>
@@ -489,14 +564,15 @@
             </div>
           </article>
 
-          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="Open Harvard source for Wesgro Young Innovator recognition">
+          <a href="https://africa.harvard.edu/people/cherise-dunn" target="_blank" rel="noopener noreferrer" class="recognition-card recognition-link" aria-label="View source for Wesgro Young Innovator recognition">
             <div class="recognition-logo">
-              <img src="./Logos/Wesgro_logo.png" alt="Wesgro" loading="lazy" />
+              <img src="./Logos/Wesgro_logo.png" alt="Wesgro" width="820" height="393" loading="lazy" />
             </div>
             <div class="space-y-3">
               <p class="section-label">Regional Platform</p>
               <h3 class="text-2xl text-ink">Wesgro</h3>
               <p class="text-sm leading-7 text-stone">Regional trade and investment platform.</p>
+              <p class="source-link">View source <svg class="source-icon" aria-hidden="true"><use href="#icon-external"></use></svg></p>
             </div>
           </a>
         </div>
@@ -509,7 +585,7 @@
           <div class="grid gap-10 lg:grid-cols-[1fr_0.75fr] lg:items-start">
             <div class="space-y-5">
               <p class="section-label">Work With Dr. Dunn</p>
-              <h2 class="max-w-3xl text-4xl text-ink md:text-5xl">Strategic advisory on healthcare innovation, AI, digital manufacturing, and health equity</h2>
+              <h2 id="contact-heading" class="max-w-3xl text-4xl text-ink md:text-5xl">Strategic advisory on healthcare innovation, AI, digital manufacturing, and health equity</h2>
               <p class="max-w-2xl text-lg leading-8 text-stone">
                 For advisory, institutional partnership, speaking, or media inquiries, use the form or contact Dr. Dunn directly.
               </p>
@@ -519,12 +595,12 @@
               </div>
               <div class="contact-details">
                 <p class="contact-detail-label">Direct contact</p>
-                <a href="mailto:cherise_dunn@hsph.harvard.edu" class="contact-detail-link">cherise_dunn@hsph.harvard.edu</a>
-                <a href="tel:+27823774334" class="contact-detail-link">+27 82 377 4334</a>
+                <a href="mailto:cherise_dunn@hsph.harvard.edu" class="contact-detail-link"><svg class="contact-icon" aria-hidden="true"><use href="#icon-mail"></use></svg>cherise_dunn@hsph.harvard.edu</a>
+                <a href="tel:+27823774334" class="contact-detail-link"><svg class="contact-icon" aria-hidden="true"><use href="#icon-phone"></use></svg>+27 82 377 4334</a>
               </div>
             </div>
 
-            <form action="https://formsubmit.co/cherise_dunn@hsph.harvard.edu" method="POST" class="contact-form rounded-[1.75rem] bg-white/85 p-6">
+            <form action="https://formsubmit.co/cherise_dunn@hsph.harvard.edu" method="POST" class="contact-form rounded-[1.75rem] bg-white/85 p-6" aria-labelledby="contact-heading">
               <input type="hidden" name="_subject" value="Advisory Inquiry from Founder Page" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="false" />
@@ -556,14 +632,15 @@
 
               <div class="form-row">
                 <label for="message" class="form-label">Message</label>
-                <textarea id="message" name="message" class="form-input form-textarea" rows="5" required></textarea>
+                <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Briefly describe the advisory, partnership, speaking, or media inquiry." required></textarea>
               </div>
 
               <button type="submit" class="rounded-full bg-brand px-6 py-3.5 text-center text-sm font-semibold text-white shadow-lg shadow-brand/20 hover:-translate-y-0.5 hover:bg-brand-dark">Send Inquiry</button>
+              <p class="form-note">Relevant institutional inquiries will be reviewed directly.</p>
 
               <div class="contact-links">
-                <a href="https://www.linkedin.com/in/dr-cherise-dunn/" target="_blank" rel="noopener noreferrer" class="block text-center text-sm font-semibold text-stone hover:text-brand">LinkedIn</a>
-                <a href="./assets/dr-cherise-dunn-cv.pdf" download class="block text-center text-sm font-semibold text-stone hover:text-brand">Download CV</a>
+                <a href="https://www.linkedin.com/in/dr-cherise-dunn/" target="_blank" rel="noopener noreferrer" class="contact-action text-center text-sm font-semibold text-stone hover:text-brand"><svg class="contact-icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg>LinkedIn</a>
+                <a href="./assets/dr-cherise-dunn-cv.pdf" download class="contact-action text-center text-sm font-semibold text-stone hover:text-brand"><svg class="contact-icon" aria-hidden="true"><use href="#icon-file"></use></svg>Download CV</a>
               </div>
             </form>
           </div>
