@@ -2,11 +2,11 @@
 
 Canonical URL: https://cherisedunn.github.io/personal-page-main/
 
-Dr. Cherise Dunn is a founder-operator and strategic advisor working across healthcare innovation, AI strategy, digital manufacturing, intelligent manufacturing, and health equity.
+Dr. Cherise Dunn is a founder-operator and strategic advisor helping institutions move healthcare innovation, AI adoption, digital manufacturing, and health equity strategies from concept to implementation.
 
 ## Advisory Focus
 
-- AI strategy for healthcare institutions and health systems
+- AI adoption for healthcare institutions and health systems
 - Digital and intelligent manufacturing for healthcare delivery
 - Point-of-care medical device development and local production capability
 - Health equity implementation and access models
