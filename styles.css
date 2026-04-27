@@ -213,6 +213,21 @@ textarea:focus-visible {
   filter: saturate(0.96) contrast(1.02);
 }
 
+.credibility-primary,
+.credibility-secondary {
+  display: block;
+}
+
+.credibility-primary {
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.credibility-secondary {
+  margin-top: 0.35rem;
+  color: var(--stone);
+}
+
 .spotlight-image {
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -383,10 +398,35 @@ textarea:focus-visible {
 .proof-card p:not(.section-label),
 .advisory-focus-card p,
 .case-card p,
+.audience-card p,
 .speaking-topics p {
   margin-top: 0.9rem;
   font-size: 0.98rem;
   line-height: 1.75;
+  color: var(--stone);
+}
+
+.compact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(142, 31, 55, 0.14);
+}
+
+.compact-cta h3 {
+  font-size: 1.45rem;
+  line-height: 1.1;
+  color: var(--ink);
+}
+
+.compact-cta p {
+  margin-top: 0.45rem;
+  font-size: 0.96rem;
+  line-height: 1.65;
   color: var(--stone);
 }
 
@@ -453,6 +493,16 @@ textarea:focus-visible {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.output-callout {
+  max-width: 58rem;
+  padding: 0.95rem 1.1rem;
+  border-left: 2px solid rgba(142, 31, 55, 0.35);
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: var(--stone);
+}
+
 .advisory-focus-card {
   min-height: 14rem;
   padding: 1.35rem 1.25rem;
@@ -475,6 +525,56 @@ textarea:focus-visible {
 }
 
 .case-card p strong {
+  color: var(--ink);
+}
+
+.best-fit-advisory {
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(74, 69, 64, 0.14);
+}
+
+.fit-list {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.fit-list p {
+  padding: 0.95rem 1rem;
+  border-radius: 0.85rem;
+  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(74, 69, 64, 0.1);
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: var(--stone);
+}
+
+.anchor-compat {
+  position: relative;
+  top: -5rem;
+  display: block;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.audience-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.audience-card {
+  padding: 1.25rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(74, 69, 64, 0.12);
+}
+
+.audience-card h3 {
+  font-size: 1.35rem;
+  line-height: 1.1;
   color: var(--ink);
 }
 
@@ -665,6 +765,28 @@ textarea:focus-visible {
 
 .best-fit-block p:not(.contact-detail-label) {
   margin-top: 0.45rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--stone);
+}
+
+.process-block,
+.asset-block {
+  max-width: 38rem;
+  padding: 1rem 1.15rem;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.52);
+  border: 1px solid rgba(74, 69, 64, 0.1);
+}
+
+.process-block h3 {
+  font-size: 1.35rem;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+.process-block p {
+  margin-top: 0.6rem;
   font-size: 0.95rem;
   line-height: 1.7;
   color: var(--stone);
@@ -897,7 +1019,8 @@ textarea:focus-visible {
   }
 
   .advisory-grid,
-  .speaking-topics {
+  .speaking-topics,
+  .audience-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1021,8 +1144,19 @@ textarea:focus-visible {
 
   .proof-card-grid,
   .advisory-grid,
-  .speaking-topics {
+  .speaking-topics,
+  .audience-grid,
+  .fit-list {
     grid-template-columns: 1fr;
+  }
+
+  .compact-cta {
+    display: grid;
+  }
+
+  .compact-cta a {
+    justify-content: center;
+    text-align: center;
   }
 
   .proof-card,
