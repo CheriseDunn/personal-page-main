@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cherisedunn.github.io/personal-page-main/sitemap.xml
