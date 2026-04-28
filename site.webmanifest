@@ -1,0 +1,31 @@
+{
+  "name": "Dr. Cherise Dunn",
+  "short_name": "Dr. Dunn",
+  "start_url": "/personal-page-main/",
+  "scope": "/personal-page-main/",
+  "display": "standalone",
+  "background_color": "#f8f4ee",
+  "theme_color": "#8e1f37",
+  "icons": [
+    {
+      "src": "Images/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "Images/site-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
