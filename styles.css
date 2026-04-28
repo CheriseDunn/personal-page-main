@@ -585,14 +585,19 @@ textarea:focus-visible {
 .audience-grid {
   display: grid;
   gap: 1.1rem;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .audience-card {
+  grid-column: span 2;
   padding: 1.25rem 1.2rem;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(74, 69, 64, 0.12);
+}
+
+.audience-card:nth-last-child(-n + 2) {
+  grid-column: span 3;
 }
 
 .audience-card h3 {
@@ -1063,6 +1068,11 @@ textarea:focus-visible {
 
   .advisory-focus-card,
   .advisory-focus-card:nth-last-child(-n + 2) {
+    grid-column: auto;
+  }
+
+  .audience-card,
+  .audience-card:nth-last-child(-n + 2) {
     grid-column: auto;
   }
 
