@@ -2,20 +2,21 @@
 
 Canonical URL: https://cherisedunn.github.io/personal-page-main/
 
-Dr. Cherise Dunn is a founder-operator and strategic advisor helping institutions move healthcare innovation, AI adoption, digital manufacturing, and health equity strategies from concept to implementation.
+Dr. Cherise Dunn is a founder-operator and strategic advisor helping health systems, public institutions, universities, funders, and partners move healthcare innovation from ambition to implementation through responsible AI adoption, resilient health manufacturing, health equity implementation, partnership governance, and implementation readiness.
 
 ## Advisory Focus
 
-- AI adoption for healthcare institutions and health systems
-- Digital and intelligent manufacturing for healthcare delivery
-- Point-of-care medical device development and local production capability
-- Health equity implementation and access models
-- Cross-sector partnerships involving public institutions, universities, funders, and strategic partners
+- Responsible AI adoption in healthcare and public-health settings
+- Resilient health manufacturing, digital production, and point-of-care capability
+- Health equity, access models, and underserved health settings
+- Cross-sector partnership architecture and governance
+- Public-health innovation and institutional delivery models
 
 ## Selected Proof
 
 - Co-founder and COO, Makes Health / SOUTH AFRICA MAKES
-- Healthcare innovation and digital manufacturing initiatives with more than $400K in funding and technology transfer support
+- Point-of-care medical device development and digital manufacturing initiatives
+- Funded and partner-supported implementation work connected to healthcare manufacturing and technology transfer
 - Platforms and affiliations include Harvard, UCT, G20 Startup20, BRICS, U.S. State Department IVLP, TEDx Cape Town, and MIT AI Ventures
 - Recognition includes Fast Company South Africa, Inspiring Fifty Africa, BRICS Young Innovator finalist distinction, and Standard Bank Top Women recognition
 
