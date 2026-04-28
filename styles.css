@@ -18,16 +18,22 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
 }
 
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
+  line-height: 1.6;
   color: var(--ink);
   background:
     radial-gradient(circle at top left, rgba(196, 106, 122, 0.14), transparent 32%),
     radial-gradient(circle at top right, rgba(176, 138, 74, 0.12), transparent 28%),
     linear-gradient(180deg, #f8f4ee 0%, #f3ede4 100%);
+}
+
+section[id] {
+  scroll-margin-top: 6.5rem;
 }
 
 main > section {
@@ -84,6 +90,7 @@ h2,
 h3 {
   font-family: "Newsreader", serif;
   letter-spacing: 0;
+  text-wrap: balance;
 }
 
 button,
@@ -115,7 +122,7 @@ textarea:focus-visible {
 
 .shell {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1160px;
 }
 
 .glass-panel {
@@ -153,25 +160,28 @@ textarea:focus-visible {
 
 .hero-grid {
   grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+  gap: clamp(2rem, 4vw, 3.5rem);
 }
 
 .hero-deck {
   font-family: "Newsreader", serif;
-  font-size: clamp(2.05rem, 4vw, 4rem);
-  max-width: 760px;
-  line-height: 1.02;
+  font-size: clamp(1.85rem, 3.7vw, 3.8rem);
+  max-width: 720px;
+  line-height: 1.05;
   letter-spacing: 0;
   color: var(--ink);
 }
 
 .hero-actions {
   align-items: center;
+  gap: 0.85rem;
 }
 
 .hero-stat-card {
   background: rgba(255, 255, 255, 0.48);
   border: 0;
   border-top: 1px solid rgba(142, 31, 55, 0.22);
+  border-radius: 1.05rem;
   box-shadow: none;
   backdrop-filter: none;
 }
@@ -233,6 +243,7 @@ textarea:focus-visible {
 }
 
 .credibility-primary {
+  font-size: 0.98rem;
   font-weight: 800;
   line-height: 1.55;
   color: var(--ink);
@@ -240,6 +251,7 @@ textarea:focus-visible {
 
 .credibility-secondary {
   margin-top: 0.35rem;
+  font-size: 0.92rem;
   line-height: 1.65;
   color: var(--stone);
 }
@@ -251,22 +263,22 @@ textarea:focus-visible {
 }
 
 .thesis-block {
-  max-width: 920px;
-  padding: 2.25rem 0 2.25rem 2rem;
+  max-width: 900px;
+  padding: 2rem 0 2rem 1.5rem;
   border-left: 3px solid var(--brand);
 }
 
 .thesis-block h2 {
   margin-top: 1rem;
-  max-width: 900px;
-  font-size: 2.65rem;
-  line-height: 1.02;
+  max-width: 760px;
+  font-size: clamp(2.05rem, 4vw, 2.8rem);
+  line-height: 1.08;
   color: var(--ink);
 }
 
 .thesis-block p:not(.section-label) {
   margin-top: 1.25rem;
-  max-width: 720px;
+  max-width: 760px;
   font-size: 1.05rem;
   line-height: 1.8;
   color: var(--stone);
@@ -382,15 +394,15 @@ textarea:focus-visible {
 .proof-card-grid {
   display: grid;
   align-items: stretch;
-  gap: 1.35rem;
+  gap: 1.1rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .proof-card {
   grid-column: span 2;
   min-height: 16rem;
-  padding: 1.75rem;
-  border-radius: 1.1rem;
+  padding: 1.55rem;
+  border-radius: 1rem;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.64));
   border: 1px solid rgba(142, 31, 55, 0.18);
@@ -407,8 +419,8 @@ textarea:focus-visible {
 .case-card h3,
 .speaking-topics h3 {
   margin-top: 0.7rem;
-  font-size: 1.62rem;
-  line-height: 1.08;
+  font-size: 1.52rem;
+  line-height: 1.1;
   color: var(--ink);
 }
 
@@ -429,8 +441,8 @@ textarea:focus-visible {
   justify-content: space-between;
   gap: 1.5rem;
   margin-top: 0.25rem;
-  padding: 1.25rem 1.35rem;
-  border-radius: 1rem;
+  padding: 1.2rem 1.25rem;
+  border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.62);
   border: 1px solid rgba(142, 31, 55, 0.14);
 }
@@ -507,7 +519,7 @@ textarea:focus-visible {
 
 .advisory-grid {
   display: grid;
-  gap: 1.15rem;
+  gap: 1rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
@@ -524,7 +536,7 @@ textarea:focus-visible {
 .advisory-focus-card {
   grid-column: span 2;
   min-height: 13.25rem;
-  padding: 1.35rem 1.25rem;
+  padding: 1.2rem 1.15rem;
   border-left: 2px solid rgba(142, 31, 55, 0.32);
   background: rgba(255, 255, 255, 0.44);
 }
@@ -535,13 +547,13 @@ textarea:focus-visible {
 
 .case-grid {
   display: grid;
-  gap: 1.35rem;
+  gap: 1.1rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .case-card {
-  padding: 1.65rem;
-  border-radius: 1.15rem;
+  padding: 1.45rem;
+  border-radius: 1rem;
   background: rgba(255, 255, 255, 0.68);
   border: 1px solid rgba(74, 69, 64, 0.12);
   box-shadow: 0 14px 36px rgba(23, 23, 23, 0.06);
@@ -584,14 +596,14 @@ textarea:focus-visible {
 
 .audience-grid {
   display: grid;
-  gap: 1.1rem;
+  gap: 1rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .audience-card {
   grid-column: span 2;
-  padding: 1.25rem 1.2rem;
-  border-radius: 1rem;
+  padding: 1.1rem;
+  border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(74, 69, 64, 0.12);
 }
@@ -632,7 +644,7 @@ textarea:focus-visible {
 
 .speaking-topics {
   display: grid;
-  gap: 1rem;
+  gap: 0.95rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   padding-top: 1.25rem;
   border-top: 1px solid rgba(74, 69, 64, 0.14);
@@ -640,7 +652,7 @@ textarea:focus-visible {
 
 .speaking-topics > div {
   grid-column: span 2;
-  padding-left: 1rem;
+  padding-left: 0.9rem;
   border-left: 2px solid rgba(142, 31, 55, 0.22);
 }
 
@@ -654,13 +666,13 @@ textarea:focus-visible {
 
 .photo-grid {
   display: grid;
-  gap: 1.15rem;
+  gap: 1rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .photo-card {
   overflow: hidden;
-  border-radius: 1.2rem;
+  border-radius: 1.1rem;
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(74, 69, 64, 0.12);
   box-shadow: 0 10px 28px rgba(23, 23, 23, 0.055);
@@ -679,7 +691,7 @@ textarea:focus-visible {
 }
 
 .photo-caption {
-  padding: 1rem 1.25rem 1.15rem;
+  padding: 0.9rem 1.1rem 1rem;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--stone);
@@ -687,7 +699,7 @@ textarea:focus-visible {
 
 .recognition-grid {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.1rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -696,8 +708,8 @@ textarea:focus-visible {
   grid-template-columns: 8.5rem minmax(0, 1fr);
   gap: 1.25rem;
   align-items: center;
-  padding: 1.25rem;
-  border-radius: 1rem;
+  padding: 1.15rem;
+  border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.66);
   border: 1px solid rgba(74, 69, 64, 0.12);
   box-shadow: 0 10px 28px rgba(23, 23, 23, 0.055);
@@ -718,8 +730,8 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 5.75rem;
-  padding: 0.9rem 1rem;
+  min-height: 5.4rem;
+  padding: 0.85rem 0.95rem;
   border-radius: 0.85rem;
   background: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(74, 69, 64, 0.14);
@@ -727,7 +739,7 @@ textarea:focus-visible {
 
 .recognition-logo img {
   max-width: 100%;
-  max-height: 3.55rem;
+  max-height: 3.2rem;
   object-fit: contain;
 }
 
@@ -749,21 +761,21 @@ textarea:focus-visible {
 
 .faq-grid {
   display: grid;
-  gap: 1rem;
+  gap: 0.9rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .faq-card {
-  padding: 1.4rem;
-  border-radius: 1rem;
+  padding: 1.25rem;
+  border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.62);
   border: 1px solid rgba(74, 69, 64, 0.12);
   box-shadow: 0 10px 28px rgba(23, 23, 23, 0.05);
 }
 
 .faq-card h3 {
-  font-size: 1.35rem;
-  line-height: 1.12;
+  font-size: 1.28rem;
+  line-height: 1.14;
   color: var(--ink);
 }
 
@@ -787,8 +799,8 @@ textarea:focus-visible {
 
 .best-fit-block {
   max-width: 38rem;
-  padding: 1rem 1.15rem;
-  border-radius: 1rem;
+  padding: 0.95rem 1rem;
+  border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.62);
   border: 1px solid rgba(74, 69, 64, 0.1);
 }
@@ -803,8 +815,8 @@ textarea:focus-visible {
 .process-block,
 .asset-block {
   max-width: 38rem;
-  padding: 1rem 1.15rem;
-  border-radius: 1rem;
+  padding: 0.95rem 1rem;
+  border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.52);
   border: 1px solid rgba(74, 69, 64, 0.1);
 }
@@ -882,10 +894,10 @@ textarea:focus-visible {
 
 .form-input {
   width: 100%;
-  min-height: 3rem;
-  padding: 0.85rem 1rem;
+  min-height: 3.15rem;
+  padding: 0.9rem 1rem;
   border: 1px solid rgba(74, 69, 64, 0.18);
-  border-radius: 1rem;
+  border-radius: 0.85rem;
   background: rgba(255, 255, 255, 0.92);
   color: var(--ink);
 }
