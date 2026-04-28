@@ -96,6 +96,14 @@ a {
     border-color 0.2s ease;
 }
 
+a.rounded-full,
+button.rounded-full {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -106,7 +114,8 @@ textarea:focus-visible {
 }
 
 .shell {
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1180px;
 }
 
 .glass-panel {
@@ -149,9 +158,14 @@ textarea:focus-visible {
 .hero-deck {
   font-family: "Newsreader", serif;
   font-size: clamp(2.05rem, 4vw, 4rem);
-  line-height: 0.98;
+  max-width: 760px;
+  line-height: 1.02;
   letter-spacing: 0;
   color: var(--ink);
+}
+
+.hero-actions {
+  align-items: center;
 }
 
 .hero-stat-card {
@@ -220,11 +234,13 @@ textarea:focus-visible {
 
 .credibility-primary {
   font-weight: 800;
+  line-height: 1.55;
   color: var(--ink);
 }
 
 .credibility-secondary {
   margin-top: 0.35rem;
+  line-height: 1.65;
   color: var(--stone);
 }
 
@@ -365,14 +381,15 @@ textarea:focus-visible {
 
 .proof-card-grid {
   display: grid;
-  gap: 1.15rem;
+  align-items: stretch;
+  gap: 1.35rem;
   grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .proof-card {
   grid-column: span 2;
-  min-height: 17rem;
-  padding: 1.6rem;
+  min-height: 16rem;
+  padding: 1.75rem;
   border-radius: 1.1rem;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.64));
@@ -411,6 +428,7 @@ textarea:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
+  margin-top: 0.25rem;
   padding: 1.25rem 1.35rem;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.62);
@@ -489,8 +507,8 @@ textarea:focus-visible {
 
 .advisory-grid {
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.15rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .output-callout {
@@ -504,20 +522,25 @@ textarea:focus-visible {
 }
 
 .advisory-focus-card {
-  min-height: 14rem;
+  grid-column: span 2;
+  min-height: 13.25rem;
   padding: 1.35rem 1.25rem;
   border-left: 2px solid rgba(142, 31, 55, 0.32);
   background: rgba(255, 255, 255, 0.44);
 }
 
+.advisory-focus-card:nth-last-child(-n + 2) {
+  grid-column: span 3;
+}
+
 .case-grid {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.35rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .case-card {
-  padding: 1.5rem;
+  padding: 1.65rem;
   border-radius: 1.15rem;
   background: rgba(255, 255, 255, 0.68);
   border: 1px solid rgba(74, 69, 64, 0.12);
@@ -561,12 +584,12 @@ textarea:focus-visible {
 
 .audience-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1.1rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .audience-card {
-  padding: 1.25rem;
+  padding: 1.25rem 1.2rem;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(74, 69, 64, 0.12);
@@ -625,26 +648,27 @@ textarea:focus-visible {
 
 .photo-grid {
   display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .photo-card {
   overflow: hidden;
-  border-radius: 1.75rem;
+  border-radius: 1.2rem;
   background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(74, 69, 64, 0.12);
-  box-shadow: 0 16px 40px rgba(23, 23, 23, 0.08);
+  box-shadow: 0 10px 28px rgba(23, 23, 23, 0.055);
 }
 
 .photo-card-large {
-  grid-row: span 2;
+  grid-row: span 1;
 }
 
 .photo-image {
   width: 100%;
-  height: 100%;
-  min-height: 18rem;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
@@ -889,6 +913,19 @@ textarea:focus-visible {
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  main > section,
+  button,
+  a {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 .sticky { position: sticky; }
 .top-0 { top: 0; }
 .z-50 { z-index: 50; }
@@ -1024,6 +1061,11 @@ textarea:focus-visible {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .advisory-focus-card,
+  .advisory-focus-card:nth-last-child(-n + 2) {
+    grid-column: auto;
+  }
+
   .case-grid {
     grid-template-columns: 1fr;
   }
@@ -1120,6 +1162,16 @@ textarea:focus-visible {
     line-height: 1.45;
   }
 
+  .hero-actions {
+    display: grid;
+    width: 100%;
+  }
+
+  .hero-actions a {
+    width: 100%;
+    text-align: center;
+  }
+
   .stat-kicker {
     font-size: 0.7rem;
     letter-spacing: 0.1em;
@@ -1167,6 +1219,19 @@ textarea:focus-visible {
 
   .advisory-focus-card {
     min-height: auto;
+  }
+
+  .proof-card p:not(.section-label),
+  .advisory-focus-card p,
+  .case-card p,
+  .audience-card p,
+  .speaking-topics p,
+  .fit-list p,
+  .faq-card p,
+  .process-block p,
+  .best-fit-block p:not(.contact-detail-label) {
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   .recognition-grid {

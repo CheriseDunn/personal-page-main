@@ -218,7 +218,7 @@
             </p>
           </div>
 
-          <div class="flex flex-wrap gap-4">
+          <div class="hero-actions flex flex-wrap gap-4">
             <a href="#contact" class="rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-xl shadow-brand/20 hover:-translate-y-0.5 hover:bg-brand-dark">Request an advisory conversation</a>
             <a href="#proof" class="rounded-full border border-stone/20 bg-white/70 px-7 py-3.5 text-sm font-semibold text-ink hover:-translate-y-0.5 hover:border-brand hover:text-brand">View selected impact</a>
           </div>
@@ -446,20 +446,50 @@
       </div>
     </section>
 
+    <section class="px-6 py-16 lg:px-8 lg:py-24">
+      <div class="shell mx-auto space-y-10">
+        <div class="max-w-3xl space-y-4">
+          <p class="section-label">Audience fit</p>
+          <h2 class="text-4xl text-ink md:text-5xl">Who this is for</h2>
+        </div>
+
+        <div class="audience-grid">
+          <article class="audience-card">
+            <h3>Health systems and public institutions</h3>
+            <p>For teams evaluating healthcare innovation, AI adoption, manufacturing capability, or access strategies.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Universities and research partners</h3>
+            <p>For institutions translating scientific, technical, or public-health work into practical innovation pathways.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Funders and innovation programmes</h3>
+            <p>For organisations assessing where innovation support, technology transfer, and partnership design can create real implementation value.</p>
+          </article>
+          <article class="audience-card">
+            <h3>Boards, media, and event organisers</h3>
+            <p>For conversations requiring credible expertise across healthcare innovation, AI, digital manufacturing, and health equity.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="media" class="px-6 py-16 lg:px-8 lg:py-24">
-      <div class="shell mx-auto grid gap-8 lg:grid-cols-[0.8fr_1.2fr]">
-        <div class="space-y-4">
-          <p class="section-label">Speaking and media</p>
-          <h2 class="text-4xl text-ink md:text-5xl">Talks, interviews, and institutional conversations</h2>
-          <p class="text-lg leading-8 text-stone">
-            Dr. Dunn is available for selected talks, panels, interviews, and moderated conversations on healthcare innovation, AI adoption, digital manufacturing, health equity, and implementation.
-          </p>
+      <div class="shell mx-auto space-y-10">
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-3xl space-y-4">
+            <p class="section-label">Speaking and media</p>
+            <h2 class="text-4xl text-ink md:text-5xl">Talks, interviews, and institutional conversations</h2>
+            <p class="text-lg leading-8 text-stone">
+              Dr. Dunn is available for selected talks, panels, interviews, and moderated conversations on healthcare innovation, AI adoption, digital manufacturing, health equity, and implementation.
+            </p>
+          </div>
           <a href="#contact" class="inline-flex rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand/20 hover:-translate-y-0.5 hover:bg-brand-dark">Invite Dr. Dunn to speak</a>
         </div>
 
         <div class="grid gap-5 md:grid-cols-3">
           <a href="https://www.youtube.com/watch?v=ePO3FomVpwo" target="_blank" rel="noopener noreferrer" class="media-card media-link overflow-hidden rounded-[1.75rem]" aria-label="Open TEDx Cape Town talk: Made for Africa. Made in Africa.">
-            <img src="https://img.youtube.com/vi/ePO3FomVpwo/hqdefault.jpg" alt="TEDx Cape Town thumbnail" class="media-thumb w-full" />
+            <img src="https://img.youtube.com/vi/ePO3FomVpwo/hqdefault.jpg" alt="TEDx Cape Town thumbnail" class="media-thumb w-full" width="480" height="360" loading="lazy" />
             <div class="space-y-3 p-5">
               <p class="section-label">TEDx Cape Town</p>
               <h3 class="text-2xl text-ink">Made for Africa. Made in Africa.</h3>
@@ -468,7 +498,7 @@
             </div>
           </a>
           <a href="https://www.youtube.com/watch?v=B92jngV144o" target="_blank" rel="noopener noreferrer" class="media-card media-link overflow-hidden rounded-[1.75rem]" aria-label="Open YouthX interview on leadership and product innovation">
-            <img src="https://img.youtube.com/vi/B92jngV144o/hqdefault.jpg" alt="YouthX interview thumbnail" class="media-thumb w-full" />
+            <img src="https://img.youtube.com/vi/B92jngV144o/hqdefault.jpg" alt="YouthX interview thumbnail" class="media-thumb w-full" width="480" height="360" loading="lazy" />
             <div class="space-y-3 p-5">
               <p class="section-label">YouthX</p>
               <h3 class="text-2xl text-ink">Leadership and product innovation</h3>
@@ -477,7 +507,7 @@
             </div>
           </a>
           <a href="https://www.youtube.com/watch?v=8Jy7xyOT6UM" target="_blank" rel="noopener noreferrer" class="media-card media-link overflow-hidden rounded-[1.75rem]" aria-label="Open Cape Health Tech feature on healthcare innovation">
-            <img src="https://img.youtube.com/vi/8Jy7xyOT6UM/hqdefault.jpg" alt="Cape Health Tech Innovators thumbnail" class="media-thumb w-full" />
+            <img src="https://img.youtube.com/vi/8Jy7xyOT6UM/hqdefault.jpg" alt="Cape Health Tech Innovators thumbnail" class="media-thumb w-full" width="480" height="360" loading="lazy" />
             <div class="space-y-3 p-5">
               <p class="section-label">Cape Health Tech</p>
               <h3 class="text-2xl text-ink">Healthcare innovation and ecosystem-building</h3>
@@ -527,45 +557,17 @@
 
         <div class="photo-grid">
           <figure class="photo-card photo-card-large">
-            <img src="./Images/Dr-Cherise-Dunn-6.jpg" alt="Dr. Cherise Dunn at a public health innovation event" class="photo-image" width="1600" height="1066" loading="eager" />
+            <img src="./Images/Dr-Cherise-Dunn-6.jpg" alt="Dr. Cherise Dunn at a public health innovation event" class="photo-image" width="1600" height="1066" loading="lazy" />
             <figcaption class="photo-caption">Founder/operator portrait in innovation setting</figcaption>
           </figure>
           <figure class="photo-card">
-            <img src="./Images/Dr-Cherise-Dunn-1.jpg" alt="Dr. Cherise Dunn speaking at a healthcare innovation event" class="photo-image" width="1366" height="1366" loading="eager" />
+            <img src="./Images/Dr-Cherise-Dunn-1.jpg" alt="Dr. Cherise Dunn speaking at a healthcare innovation event" class="photo-image" width="1366" height="1366" loading="lazy" />
             <figcaption class="photo-caption">YouthX speaking appearance</figcaption>
           </figure>
           <figure class="photo-card">
-            <img src="./Images/Dr-Cherise-Dunn-8.jpg" alt="Dr. Cherise Dunn speaking on healthcare innovation and digital manufacturing" class="photo-image" width="3024" height="4032" loading="eager" />
+            <img src="./Images/Dr-Cherise-Dunn-8.jpg" alt="Dr. Cherise Dunn speaking on healthcare innovation and digital manufacturing" class="photo-image" width="3024" height="4032" loading="lazy" />
             <figcaption class="photo-caption">Public leadership and healthcare innovation audience</figcaption>
           </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="px-6 py-16 lg:px-8 lg:py-24">
-      <div class="shell mx-auto space-y-10">
-        <div class="max-w-3xl space-y-4">
-          <p class="section-label">Audience fit</p>
-          <h2 class="text-4xl text-ink md:text-5xl">Who this is for</h2>
-        </div>
-
-        <div class="audience-grid">
-          <article class="audience-card">
-            <h3>Health systems and public institutions</h3>
-            <p>For teams evaluating healthcare innovation, AI adoption, manufacturing capability, or access strategies.</p>
-          </article>
-          <article class="audience-card">
-            <h3>Universities and research partners</h3>
-            <p>For institutions translating scientific, technical, or public-health work into practical innovation pathways.</p>
-          </article>
-          <article class="audience-card">
-            <h3>Funders and innovation programmes</h3>
-            <p>For organisations assessing where innovation support, technology transfer, and partnership design can create real implementation value.</p>
-          </article>
-          <article class="audience-card">
-            <h3>Boards, media, and event organisers</h3>
-            <p>For conversations requiring credible expertise across healthcare innovation, AI, digital manufacturing, and health equity.</p>
-          </article>
         </div>
       </div>
     </section>
